@@ -114,8 +114,13 @@ The synthetic dataset, model weights, and detailed experiment artifacts remain p
 
 ## Repository structure
 
+The repository is organized into the following directories and files:
+
+```text
 gpt-0-math/
 ├── configs/
+│   ├── arithmetic.yaml
+│   └── small.yaml
 ├── data/
 │   ├── README.md
 │   └── raw/
@@ -127,19 +132,38 @@ gpt-0-math/
 │   ├── PUBLIC_RELEASE_INVENTORY.md
 │   └── RELEASE_READINESS.md
 ├── gpt0/
+│   ├── __init__.py
+│   ├── arithmetic_dataset.py
+│   ├── arithmetic_model.py
+│   ├── checkpoints.py
+│   ├── data_pipeline.py
+│   ├── dataset.py
+│   ├── model.py
+│   └── numeric_tokenizer.py
 ├── scripts/
+│   └── ...
 ├── tests/
+│   ├── test_arithmetic_dataset.py
+│   ├── test_arithmetic_model.py
+│   ├── test_model.py
+│   └── test_numeric_tokenizer.py
 ├── .gitignore
 ├── GPT0_BASELINE.md
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
 
-This tree describes the intended public source release. Consult `.gitignore` and [the public release inventory](docs/PUBLIC_RELEASE_INVENTORY.md) for the exact file classification.
+This tree represents the public source release. Some directories contain additional files.
+
+For the exact classification of public and excluded materials, see:
+
+- [Public Release Inventory](docs/PUBLIC_RELEASE_INVENTORY.md)
+- [Data Availability](docs/DATA_AVAILABILITY.md)
+- [.gitignore](.gitignore)
 
 ## Installation
-
-Python 3.11â€“3.13 is the intended supported range for the documented CI matrix. Use a compatible Python version.
+Python 3.11-3.13 is the intended supported range for the documented CI matrix. Use a compatible Python version.
 
 ### Windows / PowerShell
 
@@ -200,7 +224,7 @@ The optional download and preparation scripts have local-data prerequisites. Rev
 
 The Apache License 2.0 applies to the source code covered by the repository license. It does not automatically relicense external datasets, third-party content, private educational material, or model weights. Each component has separate provenance and licensing considerations.
 
-GSM8K source: [Hugging Face â€“ openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k).
+GSM8K source: [Hugging Face - openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k).
 
 ## Reproducibility and limitations
 
