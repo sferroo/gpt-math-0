@@ -114,28 +114,26 @@ The synthetic dataset, model weights, and detailed experiment artifacts remain p
 
 ## Repository structure
 
-```text
 gpt-0-math/
-â”œâ”€â”€ configs/
-â”œâ”€â”€ data/
-â”‚   â”œâ”€â”€ README.md
-â”‚   â””â”€â”€ raw/
-â”‚       â””â”€â”€ manifest.example.jsonl
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ DATA_AVAILABILITY.md
-â”‚   â”œâ”€â”€ EXPERIMENTAL_PROVENANCE.md
-â”‚   â”œâ”€â”€ EXPERIMENTAL_RESULTS.md
-â”‚   â”œâ”€â”€ PUBLIC_RELEASE_INVENTORY.md
-â”‚   â””â”€â”€ RELEASE_READINESS.md
-â”œâ”€â”€ gpt0/
-â”œâ”€â”€ scripts/
-â”œâ”€â”€ tests/
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ GPT0_BASELINE.md
-â”œâ”€â”€ LICENSE
-â”œâ”€â”€ README.md
-â””â”€â”€ requirements.txt
-```
+├── configs/
+├── data/
+│   ├── README.md
+│   └── raw/
+│       └── manifest.example.jsonl
+├── docs/
+│   ├── DATA_AVAILABILITY.md
+│   ├── EXPERIMENTAL_PROVENANCE.md
+│   ├── EXPERIMENTAL_RESULTS.md
+│   ├── PUBLIC_RELEASE_INVENTORY.md
+│   └── RELEASE_READINESS.md
+├── gpt0/
+├── scripts/
+├── tests/
+├── .gitignore
+├── GPT0_BASELINE.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 
 This tree describes the intended public source release. Consult `.gitignore` and [the public release inventory](docs/PUBLIC_RELEASE_INVENTORY.md) for the exact file classification.
 
