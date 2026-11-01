@@ -1,0 +1,24 @@
+
+model:
+  vocab_size: 16000
+  block_size: 1024
+  n_layer: 6
+  n_head: 6
+  n_embd: 384
+  dropout: 0.1
+
+training:
+  batch_size: 2
+  max_iters: 2000
+  eval_interval: 250
+  learning_rate: 0.0003
+  weight_decay: 0.1
+  warmup_iters: 100
+  min_lr: 0.00003
+  seed: 42
+
+data:
+  train_sequences_path: data/processed/train_sequences.jsonl
+  val_sequences_path: data/processed/val_sequences.jsonl
+  tokenizer_path: data/tokenizer.json
+  theory_probability: 0.10

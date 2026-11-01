@@ -1,0 +1,7 @@
+tokenizers>=0.20,<1.0
+PyYAML>=6.0
+numpy>=1.26
+pytest>=8.0
+datasets>=3.0,<5.0
+# Install PyTorch separately using the official selector for your CUDA/Windows setup:
+# https://pytorch.org/get-started/locally/

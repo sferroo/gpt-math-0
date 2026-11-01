@@ -1,0 +1,27 @@
+model:
+  vocab_size: 15
+  block_size: 32
+  n_layer: 6
+  n_head: 6
+  n_embd: 384
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  max_iters: 5000
+  eval_interval: 250
+  learning_rate: 0.0003
+  weight_decay: 0.1
+  warmup_iters: 200
+  min_lr: 0.00003
+  seed: 42
+
+data:
+  dataset_dir: data/arithmetic/v1
+  train_split: train
+  validation_split: validation
+  test_id_split: test_id
+  test_ood_split: test_ood
+
+  loss_on_prompt: false
+  loss_on_response: true

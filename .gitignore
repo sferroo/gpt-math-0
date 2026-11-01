@@ -1,0 +1,60 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Checkpoints and model weights
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Experiment tracking
+wandb/
+runs/
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.env
+.env.*
+.coverage
+.mypy_cache/
+build/
+dist/
+.DS_Store
+Thumbs.db
+
+
+# Private research datasets and derived data
+data/raw/english/
+data/raw/italian/
+data/raw/manifest.jsonl
+data/arithmetic/
+data/benchmarks/
+data/processed/
+data/tokenizer.json
+
+# Local experiment records are retained locally, not part of a code-only release
+reports/
+results/
+
+# Deterministic generator can reconstruct the withheld arithmetic split
+scripts/generate_arithmetic.py
+
+# Private corpus management utility - excluded from public release
+scripts/organize_corpus.py
+
+# Private corpus management utility
+scripts/organize_corpus.py
